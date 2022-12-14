@@ -4,14 +4,14 @@
     "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.WebAPI/ElevenNote.WebAPI.csproj": {}
   },
   "projects": {
-    "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.WebAPI/ElevenNote.WebAPI.csproj": {
+    "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Data/ElevenNote.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.WebAPI/ElevenNote.WebAPI.csproj",
-        "projectName": "ElevenNote.WebAPI",
-        "projectPath": "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.WebAPI/ElevenNote.WebAPI.csproj",
+        "projectUniqueName": "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Data/ElevenNote.Data.csproj",
+        "projectName": "ElevenNote.Data",
+        "projectPath": "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Data/ElevenNote.Data.csproj",
         "packagesPath": "/Users/home/.nuget/packages/",
-        "outputPath": "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.WebAPI/obj/",
+        "outputPath": "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/home/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,195 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Models/ElevenNote.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Models/ElevenNote.Models.csproj",
+        "projectName": "ElevenNote.Models",
+        "projectPath": "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Models/ElevenNote.Models.csproj",
+        "packagesPath": "/Users/home/.nuget/packages/",
+        "outputPath": "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Models/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/home/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Services/ElevenNote.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Services/ElevenNote.Services.csproj",
+        "projectName": "ElevenNote.Services",
+        "projectPath": "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Services/ElevenNote.Services.csproj",
+        "packagesPath": "/Users/home/.nuget/packages/",
+        "outputPath": "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Services/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/home/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Data/ElevenNote.Data.csproj": {
+                "projectPath": "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Data/ElevenNote.Data.csproj"
+              },
+              "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Models/ElevenNote.Models.csproj": {
+                "projectPath": "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Models/ElevenNote.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.WebAPI/ElevenNote.WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.WebAPI/ElevenNote.WebAPI.csproj",
+        "projectName": "ElevenNote.WebAPI",
+        "projectPath": "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.WebAPI/ElevenNote.WebAPI.csproj",
+        "packagesPath": "/Users/home/.nuget/packages/",
+        "outputPath": "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.WebAPI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/home/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Data/ElevenNote.Data.csproj": {
+                "projectPath": "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Data/ElevenNote.Data.csproj"
+              },
+              "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Models/ElevenNote.Models.csproj": {
+                "projectPath": "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Models/ElevenNote.Models.csproj"
+              },
+              "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Services/ElevenNote.Services.csproj": {
+                "projectPath": "/Users/home/Documents/BlueBadgeAzure/blueBadge/ElevenNote/ElevenNote.Services/ElevenNote.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
