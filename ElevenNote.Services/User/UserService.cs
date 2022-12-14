@@ -40,7 +40,26 @@ namespace ElevenNote.Services.User
         }
 
 
+        public async Task<UserDetail> GetUserByIDAsync(int userID)
+        {
+            var entity = await _context.Users.FindAsync(userID);
 
+            if (entity is null)
+            {
+                return null;
+            }
+
+            var userDetail = new UserDetail
+            {
+                ID = entity.ID,
+                Email = entity.Email,
+                Username = entity.Username,
+                FirstName = entity.FirstName,
+                LastName = entity.LastName,
+                DateCreated = entity.DateCreated
+            };
+            return userDetail;
+        }
         private async Task<UserEntity> GetUserByEmailAsync(string email)
         {
             return await _context.Users.FirstOrDefaultAsync(user => user.Email.ToLower() == email.ToLower());
