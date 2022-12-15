@@ -11,7 +11,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace ElevenNote.Services.Token
 {
-    public class TokenService
+    public class TokenService : ITokenService
     {
         private readonly ApplicationDbContext _context;
         private readonly IConfiguration _configuration;
