@@ -1,5 +1,6 @@
 using ElevenNote.Models.User;
 using ElevenNote.Services.User;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ElevenNote.WebAPI.Controllers
@@ -33,8 +34,9 @@ namespace ElevenNote.WebAPI.Controllers
             return BadRequest("User NOT registered.");
         }
 
-        [HttpGet, Route("{userID:int}")]
-        public async Task<IActionResult> GetByID([FromForm] int userID)
+        [Authorize] 
+        [HttpGet, Route("{userID}")]
+        public async Task<IActionResult> GetByID(int userID)
         {
             var userDetail = await _service.GetUserByIDAsync(userID);
 
