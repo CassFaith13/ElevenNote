@@ -6,6 +6,7 @@ using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using ElevenNote.Services.Token;
 using Microsoft.OpenApi.Models;
+using ElevenNote.Services.Note;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +26,13 @@ builder.Services.AddScoped<IUserService, UserService>();
 // Add Token Service/Interface for Dependency Injection
 builder.Services.AddScoped<ITokenService, TokenService>();
 
+// Add Note Service/Interface for Dependency Injection
+builder.Services.AddScoped<INoteService, NoteService>();
+
+// Add HttpContext for Dependency Injection
+builder.Services.AddHttpContextAccessor();
+
+// Add Jwt Authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
     options.RequireHttpsMetadata = false;
@@ -39,6 +47,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
     };
 });
 
+// Add Swagger Authentication
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "ElevenNote.WebAPI", Version = "v1" });
