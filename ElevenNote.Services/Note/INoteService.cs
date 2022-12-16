@@ -8,5 +8,6 @@ namespace ElevenNote.Services.Note
         Task<IEnumerable<NoteListItem>> GetAllNotesAsync();
         Task<NoteDetail> GetNoteByIDAsync(int noteID);
         Task<bool> UpdateNoteAsync(NoteUpdate request);
+        Task<bool> DeleteNoteAsync(int noteID);
     }
 }
